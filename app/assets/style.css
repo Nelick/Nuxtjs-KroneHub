@@ -1,0 +1,122 @@
+:root {
+  --bg-color: #1a1b26;
+  --bg-darker: #16161e;
+  --fg-color: #a9b1d6;
+  --primary: #bb9af7;
+  --secondary: #7dcfff;
+  --accent: #f7768e;
+  --success: #9ece6a;
+  --warning: #e0af68;
+  --card-bg: #24283b;
+  --border: #414868;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.hotel-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--bg-darker);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(187, 154, 247, 0.3);
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 20px rgba(187, 154, 247, 0.5);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--secondary);
+  text-shadow: 0 0 10px rgba(125, 207, 255, 0.2);
+  text-align: center;
+}
+
+.price-tag {
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.status-available {
+  color: var(--success);
+  font-size: 0.875rem;
+}
+
+input,
+select {
+  background: var(--bg-darker);
+  border: 1px solid var(--border);
+  color: var(--fg-color);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 5px rgba(125, 207, 255, 0.3);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  list-style: none;
+  background: var(--bg-darker);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  color: var(--fg-color);
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+li:hover,
+:hover {
+  border-color: var(--secondary);
+  transform: translateX(4px);
+}

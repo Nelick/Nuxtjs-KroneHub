@@ -10,11 +10,14 @@ import { RouterLink } from "vue-router";
     <nav>
       <ul>
        <li><NuxtLink to="/">Home</NuxtLink></li>
+       <li><NuxtLink to="/rooms">Rooms</NuxtLink></li>
        <li><NuxtLink to="/about">About</NuxtLink></li>
-       <li><NuxtLink to="/contact">Contact</NuxtLink></li>
       </ul>
     </nav>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+
+</style>
